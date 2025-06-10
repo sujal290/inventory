@@ -1,0 +1,43 @@
+.header {
+    background-color: #002147;
+    color: white;
+    padding: 6px 15px; /* reduced top/bottom padding */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+  
+  .header .logo-left,
+  .header .logo-right {
+    height: 4px; /* smaller logo */
+    flex-shrink: 0;
+  }
+  
+  .header .center-text {
+    max-width: 600px;
+    font-size: 1.1rem; /* even smaller font */
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      gap: 8px;
+      padding: 10px;
+    }
+  
+    .header .logo-left,
+    .header .logo-right {
+      height: 40px;
+    }
+  
+    .header .center-text {
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+  }
+  
